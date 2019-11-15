@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Register</h1>
+
+<form action="Register/DisplayRegistrant" method="post">
+
+    <input type="text" name="FirstName" value="" placeholder="First Name" />
+    <input type="text" name="LastName" value="" placeholder="Last Name" /><br />
+    <input type="text" name="Email" value="" placeholder="you@here.com" /><br />
+    <label>Phone Number</label>
+    <input type="tel" name="PhoneNumber" value="" placeholder="123-456-7890" />
+    <label>Birthdate</label>
+    <input type="date" name="DOB" /><br />
+    <label>Favorite Color</label>
+    <input type="color" name="Color"/><br />
+    <input type="password" name="Password" value="" placeholder="Password" /><br />
+    <input type="submit" class="btn-outline-success" value="Add User!" />
+
+    @Html.ValidationSummary()
+</form>
+
